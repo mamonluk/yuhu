@@ -2,7 +2,7 @@ class CreateHackerPics < ActiveRecord::Migration
   def self.up
     create_table :hacker_pics do |t|
       t.string :name
-      t.string :link
+      t.text :link
 
       t.timestamps
     end
